@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - M3UangArray",
+            "request": "launch",
+            "mainClass": "M3UangArray",
+            "projectName": "uangArray_5cd5692d"
+        }
+    ]
+}
