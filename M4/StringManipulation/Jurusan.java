@@ -8,15 +8,15 @@ public class Jurusan {
     String cetakJurusan() {
             String cJurusan;
 
-        if (jurusan.getsubnpm().equals("110")) {
+        if (jurusan.getsubnpm().contains("110")) {
             cJurusan = "SI";
-        } else if (jurusan.getsubnpm().equals("510")){
+        } else if (jurusan.getsubnpm().contains("510")){
             cJurusan = "TI";
         }
-        else if (jurusan.getsubnpm().equals("111")){
+        else if (jurusan.getsubnpm().contains("111")){
             cJurusan = "MI";
         }
-        else if (jurusan.getsubnpm().equals("310")){
+        else if (jurusan.getsubnpm().contains("310")){
             cJurusan = "SK";
         }
         else {
