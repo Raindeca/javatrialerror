@@ -3,7 +3,7 @@
  */
 public class Templete {
 
-    void templete(StudentArray[] studentData) {
+    public void templete(StudentArray[] studentArray) {
         System.out.println();
         System.out.println();
         System.out.format("%35s", "DATA PESERTA");
@@ -15,14 +15,17 @@ public class Templete {
         System.out.println();
         System.out.println("----------------------------------------------------------------------------");
 
-        for (int i = 0; i < studentData.length; i++) {
-            final String npm = studentData[i].studenArray.npm;
-            final String fullname = studentData[i].studenArray.fullname;
-            final String jurusan = studentData[i].studenArray.jurusan;
-            final String angkatan = studentData[i].studenArray.angkatan;
-
-            System.out.format("%15s%25s%10s%10s",npm,fullname,jurusan,angkatan);
-            
+        for (int index = 0; index < studentArray.length; index++) {
+          	StudentArray student = studentArray[index];
+          
+            System.out.format(
+              "%15s%25s%10s%10s",
+              student.getnpm(),
+              student.getfullname(),
+              student.getjurusan(),
+              student.getangkatan()
+            );
+            System.out.println();
         }
     }
 }
